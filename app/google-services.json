@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726884113926",
+    "project_id": "mibiblioteca-c55ab",
+    "storage_bucket": "mibiblioteca-c55ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726884113926:android:b71adaed2de650a2b42d87",
+        "android_client_info": {
+          "package_name": "com.example.desafio03"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9nSEaJ2-NWFYNdp0mkwOnSGcsWoTEbDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
