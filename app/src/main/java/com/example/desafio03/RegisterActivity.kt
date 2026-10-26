@@ -25,15 +25,15 @@ class RegisterActivity : AppCompatActivity() {
             val confirm = etConfirm.text.toString()
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                etEmail.error = "Correo no válido"
+                etEmail.fail("Correo no válido")
                 return@setOnClickListener
             }
             if (pass.length < 6) {
-                etPassword.error = "La contraseña debe tener al menos 6 caracteres"
+                etPassword.fail("La contraseña debe tener al menos 6 caracteres")
                 return@setOnClickListener
             }
             if (pass != confirm) {
-                etConfirm.error = "Las contraseñas no coinciden"
+                etConfirm.fail("Las contraseñas no coinciden")
                 return@setOnClickListener
             }
 

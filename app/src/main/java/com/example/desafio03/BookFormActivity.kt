@@ -92,19 +92,19 @@ class BookFormActivity : AppCompatActivity() {
         val stars = ratingBar.rating.toInt()
 
         if (title.length !in 2..60) {
-            etTitle.error = "El título es obligatorio y debe tener entre 2 y 60 caracteres"
+            etTitle.fail("El título es obligatorio y debe tener entre 2 y 60 caracteres")
             return
         }
         if (author.length !in 2..60) {
-            etAuthor.error = "El autor es obligatorio y debe tener entre 2 y 60 caracteres"
+            etAuthor.fail("El autor es obligatorio y debe tener entre 2 y 60 caracteres")
             return
         }
         if (total == null || total <= 0) {
-            etTotal.error = "El total de páginas debe ser un entero mayor que cero"
+            etTotal.fail("El total de páginas debe ser un entero mayor que cero")
             return
         }
         if (read == null || read < 0 || read > total) {
-            etRead.error = "Las páginas leídas deben ser un entero entre 0 y $total"
+            etRead.fail("Las páginas leídas deben ser un entero entre 0 y $total")
             return
         }
         if (status == "Terminado" && stars < 1) {

@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
             val n = input.text.toString().toIntOrNull()
             if (n == null || n <= 0) {
-                input.error = "Debe ser un número entero mayor que cero"
+                input.fail("Debe ser un número entero mayor que cero")
             } else {
                 db.setGoal(uid, year, n)
                 dialog.dismiss()
